@@ -3,146 +3,136 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Oudom Oeng | Developer Portfolio</title>
+    <title>Oeng Oudom | Developer Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
+<!-- NAVBAR -->
 <nav class="navbar">
-    <div class="container nav-container">
-        <h2 class="logo">Oeng Oudom</h2>
+    <div class="logo">Oeng Oudom</div>
 
-        <ul class="nav-links">
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </div>
+    <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <button id="theme-toggle">🌙</button>
 </nav>
 
-<header>
-    <div class="container">
-        <h1>Oeng Oudom</h1>
-        <p>MIS Student | Full-Stack Developer | API Developer</p>
+<!-- HERO -->
+<header class="hero">
 
-        <a href="#projects" class="btn">View Projects</a>
-        <a href="assets/Oeng_Oudom_CV.pdf" class="btn" target="_blank" download>
-            Download CV
-        </a>
+    <div class="hero-image">
+        <img src="images/profile.jpg" alt="Oeng Oudom">
     </div>
+
+    <div class="hero-content">
+        <h1>Oeng Oudom</h1>
+        <h2>MIS Student | Full-Stack Developer</h2>
+
+        <p>
+            Passionate about Web Development, REST API, Database Design,
+            and building real-world systems using modern technologies.
+        </p>
+
+        <div class="hero-buttons">
+            <a href="#projects" class="btn">View Projects</a>
+
+            <a href="assets/Oeng_Oudom_CV.pdf" class="btn-outline" download>
+                Download CV
+            </a>
+        </div>
+    </div>
+
 </header>
 
+<!-- ABOUT -->
+<section id="about" class="section">
+    <h2>About Me</h2>
+    <p>
+        I am a 4th-year MIS student at Setec Institute with experience in
+        C#, ASP.NET Core, Laravel, PHP, Python, SQL Server, MySQL,
+        and REST API development.
+    </p>
+</section>
 
+<!-- SKILLS -->
+<section id="skills" class="section">
+    <h2>Skills</h2>
 
-<section id="about">
-    <div class="container">
-        <h2>About Me</h2>
-
-        <p>
-            I am a fourth-year Management Information System (MIS)
-            student at Setec Institute with experience in
-            C#, ASP.NET Core, Laravel, PHP, Python, SQL Server,
-            MySQL and REST API development.
-        </p>
+    <div class="grid">
+        <div class="card">HTML</div>
+        <div class="card">CSS</div>
+        <div class="card">JavaScript</div>
+        <div class="card">C#</div>
+        <div class="card">ASP.NET Core</div>
+        <div class="card">Laravel</div>
+        <div class="card">Python</div>
+        <div class="card">SQL Server</div>
+        <div class="card">MySQL</div>
+        <div class="card">Git</div>
     </div>
 </section>
 
-<section id="skills">
-    <div class="container">
-        <h2>Skills</h2>
+<!-- PROJECTS -->
+<section id="projects" class="section">
+    <h2>Projects</h2>
 
-        <div class="skill-grid">
-            <div>HTML</div>
-            <div>CSS</div>
-            <div>JavaScript</div>
-            <div>C#</div>
-            <div>ASP.NET Core</div>
-            <div>Laravel</div>
-            <div>Python</div>
-            <div>SQL Server</div>
-            <div>MySQL</div>
-            <div>Git</div>
-        </div>
-    </div>
-</section>
-
-<section id="projects">
-    <div class="container">
-        <h2>Projects</h2>
-
-        <div class="project-card">
-            <h3>Attendance & Payroll System</h3>
-            <p>
-                Employee attendance tracking and payroll management.
-            </p>
+    <div class="grid">
+        <div class="card">
+            <h3>Attendance System</h3>
+            <p>Employee attendance and payroll management system.</p>
         </div>
 
-        <div class="project-card">
+        <div class="card">
             <h3>POS System</h3>
-            <p>
-                Inventory, sales and reporting system using C#.
-            </p>
+            <p>Inventory and sales management using C#.</p>
         </div>
 
-        <div class="project-card">
-            <h3>Student Management System</h3>
-            <p>
-                Laravel-based student information management system.
-            </p>
-        </div>
-
-    </div>
-</section>
-
-<section id="education">
-    <div class="container">
-        <h2>Education</h2>
-
-        <div class="project-card">
-            <h3>Setec Institute</h3>
-            <p>
-                Bachelor of Management Information System (MIS)
-            </p>
-            <p>GPA: 3.58 / 4.0</p>
-        </div>
-
-        <div class="project-card">
-            <h3>Institute of Foreign Languages (IFL)</h3>
-            <p>
-                Bachelor Degree in Chinese
-            </p>
+        <div class="card">
+            <h3>Student System</h3>
+            <p>Laravel CRUD student management system.</p>
         </div>
     </div>
 </section>
 
-<section id="contact">
-    <div class="container">
-        <h2>Contact</h2>
+<!-- EDUCATION -->
+<section id="education" class="section">
+    <h2>Education</h2>
 
-        <p>Email: oudomoeng@gmail.com</p>
-        <p>Phone: 092 444 192</p>
+    <div class="card">
+        <h3>Setec Institute</h3>
+        <p>Bachelor of MIS (GPA: 3.58 / 4.0)</p>
+    </div>
 
-        <p>
-            GitHub:
-            <a href="https://github.com/yourusername">
-                github.com/yourusername
-            </a>
-        </p>
-
-        <p>
-            LinkedIn:
-            <a href="https://linkedin.com/in/yourprofile">
-                linkedin.com/in/yourprofile
-            </a>
-        </p>
+    <div class="card">
+        <h3>Institute of Foreign Languages (IFL)</h3>
+        <p>Bachelor Degree in Chinese</p>
     </div>
 </section>
 
+<!-- CONTACT -->
+<section id="contact" class="section">
+    <h2>Contact</h2>
+
+    <p>Email: oudomoeng@gmail.com</p>
+    <p>Phone: 092 444 192</p>
+
+    <!--<p>GitHub: github.com/oudomoeng1813-debug</p>-->
+    
+</section>
+
+<!-- FOOTER -->
 <footer>
-    <p>© 2026 Oeng Oudom</p>
+    <p>© 2026 Oeng Oudom. All Rights Reserved.</p>
 </footer>
+
+<script src="script.js"></script>
 
 </body>
 </html>
